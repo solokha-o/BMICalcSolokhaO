@@ -48,8 +48,9 @@ struct EnterParameterView: View {
                     }
                 }.labelsHidden()
                     .pickerStyle(.wheel)
-                    .frame(width: 50)
+                    .frame(width: UIScreen.main.bounds.size.width/5, alignment: .center)
                     .clipped()
+                    .contentShape(Rectangle())
                     .padding()
                 Spacer()
                 Picker("Height", selection: $selectedHeight) {
@@ -58,8 +59,9 @@ struct EnterParameterView: View {
                     }
                 }.labelsHidden()
                     .pickerStyle(.wheel)
-                    .frame(width: 50)
+                    .frame(width: UIScreen.main.bounds.size.width/5, alignment: .center)
                     .clipped()
+                    .contentShape(Rectangle())
                     .padding()
                 Spacer()
                 Picker("Gender", selection: $selectedGender) {
@@ -68,8 +70,9 @@ struct EnterParameterView: View {
                     }
                 }.labelsHidden()
                     .pickerStyle(.wheel)
-                    .frame(width: 70)
+                    .frame(width: UIScreen.main.bounds.size.width/5, alignment: .center)
                     .clipped()
+                    .contentShape(Rectangle())
                     .padding()
             }.border(.gray)
                 .shadow(color: .gray, radius: 10, x: 5, y: 0)
