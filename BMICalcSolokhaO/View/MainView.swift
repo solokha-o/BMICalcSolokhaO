@@ -14,7 +14,7 @@ struct MainView: View {
     var body: some View {
         NavigationView {
             NavigationLink {
-                EnterParameterView()
+                EnterParameterView().navigationTitle("Add BMI Details")
             } label: {
                 Image(viewModel.imageName)
             }

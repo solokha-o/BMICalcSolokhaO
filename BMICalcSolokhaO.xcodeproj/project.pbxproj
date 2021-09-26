@@ -3,19 +3,34 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB09631527004A20008D987E /* RateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB09631427004A20008D987E /* RateView.swift */; };
+		DB09631727006ABB008D987E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB09631627006ABB008D987E /* AppDelegate.swift */; };
+		DB09631927006D3D008D987E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB09631827006D3D008D987E /* GoogleService-Info.plist */; };
 		DB55B8F626FE218B004C91FA /* BMICalcSolokhaOApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB55B8F526FE218B004C91FA /* BMICalcSolokhaOApp.swift */; };
 		DB55B8F826FE218B004C91FA /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB55B8F726FE218B004C91FA /* MainView.swift */; };
 		DB55B8FA26FE218E004C91FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB55B8F926FE218E004C91FA /* Assets.xcassets */; };
 		DB55B8FD26FE218E004C91FA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB55B8FC26FE218E004C91FA /* Preview Assets.xcassets */; };
 		DB55B90426FE2339004C91FA /* EnterParameterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB55B90326FE2339004C91FA /* EnterParameterView.swift */; };
 		DB66F4E726FE4B16004563AC /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB66F4E626FE4B16004563AC /* MainViewModel.swift */; };
+		DB7CF17426FF3E9B00DC503C /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7CF17326FF3E9B00DC503C /* Person.swift */; };
+		DB7CF17626FF3F8B00DC503C /* ResultBMIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7CF17526FF3F8B00DC503C /* ResultBMIView.swift */; };
+		DB7CF17826FF454600DC503C /* BMICalcModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7CF17726FF454600DC503C /* BMICalcModel.swift */; };
+		DB7CF17A26FF4CCF00DC503C /* ResultBMIViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7CF17926FF4CCF00DC503C /* ResultBMIViewModel.swift */; };
+		DBB3AEBC2700716C009CB4E7 /* ContainerAdMobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB3AEBB2700716C009CB4E7 /* ContainerAdMobView.swift */; };
+		DBB3AEBE270074FD009CB4E7 /* AdMobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB3AEBD270074FC009CB4E7 /* AdMobView.swift */; };
+		F5DC79E4EAAADB86F16C3A15 /* Pods_BMICalcSolokhaO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE4FA6761694EB446C94A862 /* Pods_BMICalcSolokhaO.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		47D7D979CB6CCE6B809E0337 /* Pods-BMICalcSolokhaO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BMICalcSolokhaO.debug.xcconfig"; path = "Target Support Files/Pods-BMICalcSolokhaO/Pods-BMICalcSolokhaO.debug.xcconfig"; sourceTree = "<group>"; };
+		980D0713BB7E23CD536F4F89 /* Pods-BMICalcSolokhaO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BMICalcSolokhaO.release.xcconfig"; path = "Target Support Files/Pods-BMICalcSolokhaO/Pods-BMICalcSolokhaO.release.xcconfig"; sourceTree = "<group>"; };
+		DB09631427004A20008D987E /* RateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateView.swift; sourceTree = "<group>"; };
+		DB09631627006ABB008D987E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DB09631827006D3D008D987E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DB55B8F226FE218B004C91FA /* BMICalcSolokhaO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BMICalcSolokhaO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB55B8F526FE218B004C91FA /* BMICalcSolokhaOApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMICalcSolokhaOApp.swift; sourceTree = "<group>"; };
 		DB55B8F726FE218B004C91FA /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -23,6 +38,13 @@
 		DB55B8FC26FE218E004C91FA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DB55B90326FE2339004C91FA /* EnterParameterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterParameterView.swift; sourceTree = "<group>"; };
 		DB66F4E626FE4B16004563AC /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		DB7CF17326FF3E9B00DC503C /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		DB7CF17526FF3F8B00DC503C /* ResultBMIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultBMIView.swift; sourceTree = "<group>"; };
+		DB7CF17726FF454600DC503C /* BMICalcModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMICalcModel.swift; sourceTree = "<group>"; };
+		DB7CF17926FF4CCF00DC503C /* ResultBMIViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultBMIViewModel.swift; sourceTree = "<group>"; };
+		DBB3AEBB2700716C009CB4E7 /* ContainerAdMobView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerAdMobView.swift; sourceTree = "<group>"; };
+		DBB3AEBD270074FC009CB4E7 /* AdMobView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdMobView.swift; sourceTree = "<group>"; };
+		DE4FA6761694EB446C94A862 /* Pods_BMICalcSolokhaO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BMICalcSolokhaO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,17 +52,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5DC79E4EAAADB86F16C3A15 /* Pods_BMICalcSolokhaO.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		312EE489C5671D36AFD28C8E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DE4FA6761694EB446C94A862 /* Pods_BMICalcSolokhaO.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9252AAB60D53A9E2834A46B2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				47D7D979CB6CCE6B809E0337 /* Pods-BMICalcSolokhaO.debug.xcconfig */,
+				980D0713BB7E23CD536F4F89 /* Pods-BMICalcSolokhaO.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		DB55B8E926FE218B004C91FA = {
 			isa = PBXGroup;
 			children = (
 				DB55B8F426FE218B004C91FA /* BMICalcSolokhaO */,
 				DB55B8F326FE218B004C91FA /* Products */,
+				9252AAB60D53A9E2834A46B2 /* Pods */,
+				312EE489C5671D36AFD28C8E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +98,8 @@
 			isa = PBXGroup;
 			children = (
 				DB55B8F526FE218B004C91FA /* BMICalcSolokhaOApp.swift */,
+				DB09631627006ABB008D987E /* AppDelegate.swift */,
+				DB09631827006D3D008D987E /* GoogleService-Info.plist */,
 				DB66F4E826FE4E1C004563AC /* Model */,
 				DB66F4E926FE4E27004563AC /* ViewModel */,
 				DB66F4EA26FE4E55004563AC /* View */,
@@ -76,6 +120,8 @@
 		DB66F4E826FE4E1C004563AC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DB7CF17326FF3E9B00DC503C /* Person.swift */,
+				DB7CF17726FF454600DC503C /* BMICalcModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -84,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				DB66F4E626FE4B16004563AC /* MainViewModel.swift */,
+				DB7CF17926FF4CCF00DC503C /* ResultBMIViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -93,6 +140,10 @@
 			children = (
 				DB55B8F726FE218B004C91FA /* MainView.swift */,
 				DB55B90326FE2339004C91FA /* EnterParameterView.swift */,
+				DB7CF17526FF3F8B00DC503C /* ResultBMIView.swift */,
+				DB09631427004A20008D987E /* RateView.swift */,
+				DBB3AEBB2700716C009CB4E7 /* ContainerAdMobView.swift */,
+				DBB3AEBD270074FC009CB4E7 /* AdMobView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -104,9 +155,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DB55B90026FE218E004C91FA /* Build configuration list for PBXNativeTarget "BMICalcSolokhaO" */;
 			buildPhases = (
+				62065507B3EAC530C56DD990 /* [CP] Check Pods Manifest.lock */,
 				DB55B8EE26FE218B004C91FA /* Sources */,
 				DB55B8EF26FE218B004C91FA /* Frameworks */,
 				DB55B8F026FE218B004C91FA /* Resources */,
+				8BC76A5793BC4858FB9050CB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,7 +186,7 @@
 				};
 			};
 			buildConfigurationList = DB55B8ED26FE218B004C91FA /* Build configuration list for PBXProject "BMICalcSolokhaO" */;
-			compatibilityVersion = "Xcode 13.0";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -157,19 +210,70 @@
 			files = (
 				DB55B8FD26FE218E004C91FA /* Preview Assets.xcassets in Resources */,
 				DB55B8FA26FE218E004C91FA /* Assets.xcassets in Resources */,
+				DB09631927006D3D008D987E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		62065507B3EAC530C56DD990 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BMICalcSolokhaO-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8BC76A5793BC4858FB9050CB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BMICalcSolokhaO/Pods-BMICalcSolokhaO-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BMICalcSolokhaO/Pods-BMICalcSolokhaO-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BMICalcSolokhaO/Pods-BMICalcSolokhaO-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DB55B8EE26FE218B004C91FA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBB3AEBE270074FD009CB4E7 /* AdMobView.swift in Sources */,
+				DB7CF17826FF454600DC503C /* BMICalcModel.swift in Sources */,
+				DBB3AEBC2700716C009CB4E7 /* ContainerAdMobView.swift in Sources */,
+				DB7CF17426FF3E9B00DC503C /* Person.swift in Sources */,
+				DB09631527004A20008D987E /* RateView.swift in Sources */,
 				DB55B8F826FE218B004C91FA /* MainView.swift in Sources */,
+				DB7CF17A26FF4CCF00DC503C /* ResultBMIViewModel.swift in Sources */,
+				DB7CF17626FF3F8B00DC503C /* ResultBMIView.swift in Sources */,
 				DB55B90426FE2339004C91FA /* EnterParameterView.swift in Sources */,
 				DB55B8F626FE218B004C91FA /* BMICalcSolokhaOApp.swift in Sources */,
+				DB09631727006ABB008D987E /* AppDelegate.swift in Sources */,
 				DB66F4E726FE4B16004563AC /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -228,7 +332,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.7;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -283,7 +387,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.7;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -295,6 +399,7 @@
 		};
 		DB55B90126FE218E004C91FA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47D7D979CB6CCE6B809E0337 /* Pods-BMICalcSolokhaO.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -325,6 +430,7 @@
 		};
 		DB55B90226FE218E004C91FA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 980D0713BB7E23CD536F4F89 /* Pods-BMICalcSolokhaO.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

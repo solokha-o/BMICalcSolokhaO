@@ -9,6 +9,10 @@ import SwiftUI
 
 @main
 struct BMICalcSolokhaOApp: App {
+    
+    ///adapt app for AppDelegate
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    
     var body: some Scene {
         WindowGroup {
             MainView()
