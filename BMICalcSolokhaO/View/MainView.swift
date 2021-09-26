@@ -14,10 +14,11 @@ struct MainView: View {
     var body: some View {
         NavigationView {
             NavigationLink {
-                EnterParameterView().navigationTitle("Add BMI Details")
+                EnterParameterView().navigationBarTitle("Add BMI Details")                .navigationBarTitleDisplayMode(.large)
             } label: {
                 Image(viewModel.imageName)
             }
+            .navigationViewStyle(.stack)
             .padding()
         }
     }

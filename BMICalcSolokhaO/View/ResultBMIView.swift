@@ -18,16 +18,32 @@ struct ResultBMIView: View {
     }
     
     var body: some View {
-        NavigationView {
+        VStack {
             VStack {
                 Divider()
+                    .background(Color.white)
                 Text("BODY MASS INDEX")
+                    .font(.title3)
+                    .foregroundColor(.white)
+                    .padding()
                 Divider()
+                    .background(Color.white)
                 Text(String(format: "%.2f", viewModel.indexBMI))
+                    .underline()
+                    .foregroundColor(.white)
+                    .font(Font.system(size: 72))
+                    .padding()
                 let (title, description) = viewModel.result()
                 Text("Hello \(viewModel.name), you are \(title)")
+                    .font(.title3)
+                    .foregroundColor(.white)
+                    .padding()
                 Text(description)
+                    .foregroundColor(.white)
+                    .padding()
                 Text("Ponderal Index: " + String(format: "%.2f", viewModel.indexPI) + " kg/m3")
+                    .foregroundColor(.white)
+                    .padding()
                 HStack {
                     Button(action: actionShare) {
                         HStack {
@@ -39,7 +55,7 @@ struct ResultBMIView: View {
                         }.padding()
                             .background (
                                 RoundedRectangle(cornerRadius: 8)
-                                    .strokeBorder(.gray, lineWidth: 2))
+                                    .strokeBorder(.white, lineWidth: 4))
                     }.padding()
                     Button(action: actionSheet) {
                         HStack {
@@ -51,15 +67,17 @@ struct ResultBMIView: View {
                         }.padding()
                             .background (
                                 RoundedRectangle(cornerRadius: 8)
-                                    .strokeBorder(.gray, lineWidth: 2))
+                                    .strokeBorder(.white, lineWidth: 4))
                     }
                     .sheet(isPresented: $isPresented) {
                         RateView(isPresented: $isPresented)
                     }
                 }.padding()
             }.clipShape(Capsule())
-                .border(.gray)
-//            AdMobView()
+                .background(ColorDesign.gradientColor.cornerRadius(10))
+                .padding()
+            AdMobView()
+                .padding()
         }
     }
     
@@ -79,7 +97,6 @@ struct ResultBMIView: View {
     private func actionSheet() {
         isPresented.toggle()
     }
-    
 }
 
 struct ResultBMIView_Previews: PreviewProvider {

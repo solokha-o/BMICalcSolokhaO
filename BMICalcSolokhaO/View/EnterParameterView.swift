@@ -13,64 +13,78 @@ struct EnterParameterView: View {
     
     private let pickerRange = Range(1...200)
     
-    @State var selectedWeight = 1
-    @State var selectedHeight = 1
+    @State var selectedWeight = 50
+    @State var selectedHeight = 100
     @State private var selectedGender = Gender.male
     
     var body: some View {
-        GeometryReader { geometry in
-            NavigationView {
-                VStack {
-                    Text("Enter Personal Detail")
-                        .padding()
-                    TextField("Name", text: $enteredName)
-                        .border(.gray)
-                        .padding()
-                    Text("Calculate Your Body Mass Index")
-                        .padding()
-                    HStack {
-                        Text("Weight")
-                            .padding()
-                        Text("Height")
-                            .padding()
-                        Text("Gender")
-                            .padding()
-                    }
-                    HStack{
-                        Picker("Weight", selection: $selectedWeight) {
-                            ForEach(pickerRange, id: \.self) {
-                                Text("\($0)")
-                            }
-                        }.labelsHidden()
-                            .pickerStyle(.wheel)
-                            .frame(width: geometry.size.width/6)
-                            .padding()
-                        Picker("Height", selection: $selectedHeight) {
-                            ForEach(pickerRange, id: \.self) {
-                                Text("\($0)")
-                            }
-                        }.labelsHidden()
-                            .pickerStyle(.wheel)
-                            .frame(width: geometry.size.width/6)
-                            .padding()
-                        Picker("Gender", selection: $selectedGender) {
-                            ForEach(Gender.allCases) { color in
-                                Text(color.rawValue.capitalized)
-                            }
-                        }.labelsHidden()
-                            .pickerStyle(.wheel)
-                            .frame(width: geometry.size.width/5)
-                            .padding()
-                    } .clipShape(Capsule())
-                        .border(.gray)
-                    NavigationLink {
-                        let person = Person(name: enteredName, weight: selectedWeight, height: selectedHeight, gender: selectedGender)
-                        ResultBMIView(person: person).navigationTitle("BMI Details")
-                    } label: {
-                        Text("Calculate")
-                    }.padding()
-                }
+        
+        VStack {
+            Text("Enter Personal Detail")
+                .padding()
+                .font(.system(.largeTitle, design: .rounded))
+                .foregroundColor(Color(UIColor.hexStringToUIColor(hex: "#19769F")))
+            TextField("Name", text: $enteredName)
+                .padding()
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                .font(.largeTitle)
+            Text("Calculate Your Body Mass Index")
+                .foregroundColor(.gray)
+                .padding()
+            HStack {
+                Text("Weight")
+                    .padding()
+                Spacer()
+                Text("Height")
+                    .padding()
+                Spacer()
+                Text("Gender")
+                    .padding()
             }
+            HStack{
+                Picker("Weight", selection: $selectedWeight) {
+                    ForEach(pickerRange, id: \.self) {
+                        Text("\($0)")
+                    }
+                }.labelsHidden()
+                    .pickerStyle(.wheel)
+                    .frame(width: 50)
+                    .clipped()
+                    .padding()
+                Spacer()
+                Picker("Height", selection: $selectedHeight) {
+                    ForEach(pickerRange, id: \.self) {
+                        Text("\($0)")
+                    }
+                }.labelsHidden()
+                    .pickerStyle(.wheel)
+                    .frame(width: 50)
+                    .clipped()
+                    .padding()
+                Spacer()
+                Picker("Gender", selection: $selectedGender) {
+                    ForEach(Gender.allCases) { color in
+                        Text(color.rawValue.capitalized)
+                    }
+                }.labelsHidden()
+                    .pickerStyle(.wheel)
+                    .frame(width: 70)
+                    .clipped()
+                    .padding()
+            }.border(.gray)
+                .shadow(color: .gray, radius: 10, x: 5, y: 0)
+                .padding()
+            NavigationLink {
+                let person = Person(name: enteredName, weight: selectedWeight, height: selectedHeight, gender: selectedGender)
+                ResultBMIView(person: person).navigationBarTitle("BMI Details") .navigationBarTitleDisplayMode(.large)
+                
+            } label: {
+                Text("Calculate")
+                    .font(.system(.title, design: .rounded))
+                    .foregroundColor(.white)
+                    .padding()
+            }.background(ColorDesign.gradientColor.cornerRadius(10))
+                .padding()
         }
     }
 }

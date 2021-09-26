@@ -20,8 +20,12 @@
 		DB7CF17626FF3F8B00DC503C /* ResultBMIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7CF17526FF3F8B00DC503C /* ResultBMIView.swift */; };
 		DB7CF17826FF454600DC503C /* BMICalcModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7CF17726FF454600DC503C /* BMICalcModel.swift */; };
 		DB7CF17A26FF4CCF00DC503C /* ResultBMIViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7CF17926FF4CCF00DC503C /* ResultBMIViewModel.swift */; };
-		DBB3AEBC2700716C009CB4E7 /* ContainerAdMobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB3AEBB2700716C009CB4E7 /* ContainerAdMobView.swift */; };
 		DBB3AEBE270074FD009CB4E7 /* AdMobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB3AEBD270074FC009CB4E7 /* AdMobView.swift */; };
+		DBF26D2A270090C0003E818A /* UIColor + hexStringToUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF26D29270090C0003E818A /* UIColor + hexStringToUIColor.swift */; };
+		DBF26D2D27009701003E818A /* ColorDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF26D2C27009701003E818A /* ColorDesign.swift */; };
+		DBF26D2F27009B06003E818A /* NavigationBarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF26D2E27009B06003E818A /* NavigationBarModifier.swift */; };
+		DBF26D3127009B34003E818A /* View + navigationBarColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF26D3027009B34003E818A /* View + navigationBarColor.swift */; };
+		DBF26D332700ACE1003E818A /* View + hideKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF26D322700ACE1003E818A /* View + hideKeyboard.swift */; };
 		F5DC79E4EAAADB86F16C3A15 /* Pods_BMICalcSolokhaO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE4FA6761694EB446C94A862 /* Pods_BMICalcSolokhaO.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,8 +46,13 @@
 		DB7CF17526FF3F8B00DC503C /* ResultBMIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultBMIView.swift; sourceTree = "<group>"; };
 		DB7CF17726FF454600DC503C /* BMICalcModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMICalcModel.swift; sourceTree = "<group>"; };
 		DB7CF17926FF4CCF00DC503C /* ResultBMIViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultBMIViewModel.swift; sourceTree = "<group>"; };
-		DBB3AEBB2700716C009CB4E7 /* ContainerAdMobView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerAdMobView.swift; sourceTree = "<group>"; };
 		DBB3AEBD270074FC009CB4E7 /* AdMobView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdMobView.swift; sourceTree = "<group>"; };
+		DBF26D2727007E47003E818A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		DBF26D29270090C0003E818A /* UIColor + hexStringToUIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + hexStringToUIColor.swift"; sourceTree = "<group>"; };
+		DBF26D2C27009701003E818A /* ColorDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorDesign.swift; sourceTree = "<group>"; };
+		DBF26D2E27009B06003E818A /* NavigationBarModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarModifier.swift; sourceTree = "<group>"; };
+		DBF26D3027009B34003E818A /* View + navigationBarColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View + navigationBarColor.swift"; sourceTree = "<group>"; };
+		DBF26D322700ACE1003E818A /* View + hideKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View + hideKeyboard.swift"; sourceTree = "<group>"; };
 		DE4FA6761694EB446C94A862 /* Pods_BMICalcSolokhaO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BMICalcSolokhaO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -97,6 +106,7 @@
 		DB55B8F426FE218B004C91FA /* BMICalcSolokhaO */ = {
 			isa = PBXGroup;
 			children = (
+				DBF26D2727007E47003E818A /* Info.plist */,
 				DB55B8F526FE218B004C91FA /* BMICalcSolokhaOApp.swift */,
 				DB09631627006ABB008D987E /* AppDelegate.swift */,
 				DB09631827006D3D008D987E /* GoogleService-Info.plist */,
@@ -104,6 +114,7 @@
 				DB66F4E926FE4E27004563AC /* ViewModel */,
 				DB66F4EA26FE4E55004563AC /* View */,
 				DB55B8F926FE218E004C91FA /* Assets.xcassets */,
+				DBF26D2827009048003E818A /* Extension */,
 				DB55B8FB26FE218E004C91FA /* Preview Content */,
 			);
 			path = BMICalcSolokhaO;
@@ -142,10 +153,29 @@
 				DB55B90326FE2339004C91FA /* EnterParameterView.swift */,
 				DB7CF17526FF3F8B00DC503C /* ResultBMIView.swift */,
 				DB09631427004A20008D987E /* RateView.swift */,
-				DBB3AEBB2700716C009CB4E7 /* ContainerAdMobView.swift */,
 				DBB3AEBD270074FC009CB4E7 /* AdMobView.swift */,
+				DBF26D2B270096DA003E818A /* Helper */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		DBF26D2827009048003E818A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DBF26D29270090C0003E818A /* UIColor + hexStringToUIColor.swift */,
+				DBF26D3027009B34003E818A /* View + navigationBarColor.swift */,
+				DBF26D322700ACE1003E818A /* View + hideKeyboard.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		DBF26D2B270096DA003E818A /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				DBF26D2C27009701003E818A /* ColorDesign.swift */,
+				DBF26D2E27009B06003E818A /* NavigationBarModifier.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,12 +295,16 @@
 			files = (
 				DBB3AEBE270074FD009CB4E7 /* AdMobView.swift in Sources */,
 				DB7CF17826FF454600DC503C /* BMICalcModel.swift in Sources */,
-				DBB3AEBC2700716C009CB4E7 /* ContainerAdMobView.swift in Sources */,
 				DB7CF17426FF3E9B00DC503C /* Person.swift in Sources */,
+				DBF26D3127009B34003E818A /* View + navigationBarColor.swift in Sources */,
 				DB09631527004A20008D987E /* RateView.swift in Sources */,
+				DBF26D2F27009B06003E818A /* NavigationBarModifier.swift in Sources */,
+				DBF26D2D27009701003E818A /* ColorDesign.swift in Sources */,
 				DB55B8F826FE218B004C91FA /* MainView.swift in Sources */,
 				DB7CF17A26FF4CCF00DC503C /* ResultBMIViewModel.swift in Sources */,
 				DB7CF17626FF3F8B00DC503C /* ResultBMIView.swift in Sources */,
+				DBF26D332700ACE1003E818A /* View + hideKeyboard.swift in Sources */,
+				DBF26D2A270090C0003E818A /* UIColor + hexStringToUIColor.swift in Sources */,
 				DB55B90426FE2339004C91FA /* EnterParameterView.swift in Sources */,
 				DB55B8F626FE218B004C91FA /* BMICalcSolokhaOApp.swift in Sources */,
 				DB09631727006ABB008D987E /* AppDelegate.swift in Sources */,
@@ -409,6 +443,7 @@
 				DEVELOPMENT_TEAM = X8NNCQ3HW6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BMICalcSolokhaO/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -440,6 +475,7 @@
 				DEVELOPMENT_TEAM = X8NNCQ3HW6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BMICalcSolokhaO/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
