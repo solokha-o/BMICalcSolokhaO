@@ -80,6 +80,7 @@ struct EnterParameterView: View {
             NavigationLink {
                 let person = Person(name: enteredName, weight: selectedWeight, height: selectedHeight, gender: selectedGender)
                 ResultBMIView(person: person).navigationBarTitle("BMI Details") .navigationBarTitleDisplayMode(.large)
+                    .navigationBarGradient(ColorDesign.gradient, startPoint: .topLeading, endPoint: .bottomTrailing)
                 
             } label: {
                 Text("Calculate")

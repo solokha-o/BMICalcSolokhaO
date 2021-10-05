@@ -1,18 +1,26 @@
 //
-//  NavigationBarModifier.swift
+//  NavigationBarGradientModifier.swift
 //  BMICalcSolokhaO
 //
-//  Created by Oleksandr Solokha on 26.09.2021.
+//  Created by Oleksandr Solokha on 05.10.2021.
 //
 
 import SwiftUI
 
-struct NavigationBarModifier: ViewModifier {
-        
-    var backgroundColor: UIColor?
+struct NavigationBarGradientModifier: ViewModifier {
     
-    init( backgroundColor: UIColor?) {
-        self.backgroundColor = backgroundColor
+    var backgroundGradient: Gradient
+    
+    var startPoint: SwiftUI.UnitPoint
+    
+    var endPoint: SwiftUI.UnitPoint
+    
+    init(backgroundGradient: Gradient,startPoint: SwiftUI.UnitPoint, endPoint: SwiftUI.UnitPoint) {
+        
+        self.backgroundGradient = backgroundGradient
+        self.startPoint = startPoint
+        self.endPoint = endPoint
+        
         let coloredAppearance = UINavigationBarAppearance()
         coloredAppearance.configureWithTransparentBackground()
         coloredAppearance.backgroundColor = .clear
@@ -23,7 +31,7 @@ struct NavigationBarModifier: ViewModifier {
         UINavigationBar.appearance().compactAppearance = coloredAppearance
         UINavigationBar.appearance().scrollEdgeAppearance = coloredAppearance
         UINavigationBar.appearance().tintColor = .white
-
+        
     }
     
     func body(content: Content) -> some View {
@@ -31,7 +39,7 @@ struct NavigationBarModifier: ViewModifier {
             content
             VStack {
                 GeometryReader { geometry in
-                    Color(self.backgroundColor ?? .clear)
+                    LinearGradient(gradient: self.backgroundGradient, startPoint: self.startPoint, endPoint: self.endPoint)
                         .frame(height: geometry.safeAreaInsets.top)
                         .edgesIgnoringSafeArea(.top)
                     Spacer()

@@ -15,6 +15,7 @@ struct MainView: View {
         NavigationView {
             NavigationLink {
                 EnterParameterView().navigationBarTitle("Add BMI Details")                .navigationBarTitleDisplayMode(.large)
+                    .navigationBarGradient(ColorDesign.gradient, startPoint: .topLeading, endPoint: .bottomTrailing)
             } label: {
                 Image(viewModel.imageName)
             }
