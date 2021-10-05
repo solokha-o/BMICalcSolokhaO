@@ -15,7 +15,7 @@
 - BMI Details screen include google ad banner.<br/>
 
 ## Screenshots - gif 📷
-![eca651ba0130e7025977ee2b11b65c80ae3e11c7](https://user-images.githubusercontent.com/15982074/134812420-a9ab7d47-59a9-4985-a97f-85f2da25345a.gif)
+![4985b0ee41b29c7d0ad5f2dbcf0831e43ab3e53c](https://user-images.githubusercontent.com/15982074/136063971-9b863c78-1bde-45a0-8a32-2f14034a6e8b.gif)
 
 ## Installation 🛠
  - Clone / download this repository.
